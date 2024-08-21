@@ -4,11 +4,11 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="container">
-      <h1 className="text-center">Buddy - Your Learning Companion</h1>
-      <nav>
+    <header className= "bg-buddy-blue text-buddy_text">
+      <h1 className="text-center text-2xl py-5 font-medium">Buddy - Your Learning Companion</h1>
+      <nav className="w-full flex justify-center items-center gap-4 border-t border-b p-5">
         {headerLinks.map((link, index) => (
-          <Link href={link.href} key={index}>
+          <Link href={link.href} key={index} className="text-lg">
             {link.label}
           </Link>
         ))}

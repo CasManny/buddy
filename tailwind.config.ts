@@ -19,7 +19,9 @@ const config = {
     },
     colors: {
       'buddy-bg': "#F0F0F5",
-      'buddy_text': "#FFFFFF"
+      'buddy_text': "#FFFFFF",
+      'buddy-header': "#3B5998",
+      'buddy-blue': '#4A69AD',
     },
     extend: {
       keyframes: {
