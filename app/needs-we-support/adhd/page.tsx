@@ -1,8 +1,10 @@
+import Game from '@/components/Game'
 import React from 'react'
-
 const ADHDPage = () => {
   return (
-    <div>ADHDPage</div>
+    <div>
+      <Game />
+    </div>
   )
 }
 

@@ -1,0 +1,28 @@
+.gameContainer {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .letterContainer {
+    margin-bottom: 20px;
+  }
+  
+  .inputContainer {
+    margin-bottom: 20px;
+  }
+  
+  .progressBar {
+    width: 80%;
+    height: 20px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.5s ease;
+  }
+  
