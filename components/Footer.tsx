@@ -8,7 +8,7 @@ const Footer = () => {
         <p>All Rights Reserved</p>
       </div>
       <div className="social-media">
-        <p>Contact us at <span>info@buddy.com</span></p>
+        <p>Contact us at <span className="underline">info@buddy.com</span></p>
         <div className="">
           <h1>follow us on social media</h1>
           <p>facebook</p>

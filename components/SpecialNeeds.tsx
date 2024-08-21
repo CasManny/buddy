@@ -1,4 +1,5 @@
 import { needsWeSupport } from "@/constants";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +15,8 @@ const SpecialNeeds = () => {
       </div>
       <div className="needs-container grid grid-cols-3 gap-3 mt-5">
         {needsWeSupport.map((item, index) => (
-          <Link href={`/needs-we-support/${item.title}`} className="bg-buddy_text p-10 text-center rounded-lg">
+          <Link href={`/needs-we-support${item.link}`} className="bg-buddy-bg p-10 text-center rounded-lg">
+            <Image src={item.image} alt="image" width={50} height={50} className="w-20 h-20 mx-auto" />
             <h2 className="font-bold my-2 tracking-wider text-lg">{item.title}</h2>
             <p>{ item.content}</p>
           </Link>
