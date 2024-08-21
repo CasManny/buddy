@@ -9,12 +9,6 @@ const Footer = () => {
       </div>
       <div className="social-media">
         <p>Contact us at <span className="underline">info@buddy.com</span></p>
-        <div className="">
-          <h1>follow us on social media</h1>
-          <p className="underline cursor-pointer">facebook</p>
-          <p className="underline cursor-pointer">X</p>
-          <p className="underline cursor-pointer">Instagram</p>
-        </div>
       </div>
     </footer>
   );
