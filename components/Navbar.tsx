@@ -4,15 +4,23 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className= "bg-[#8383C3] text-buddy_text">
-      <h1 className="text-center text-2xl py-5 font-medium">Buddy - Your Learning Companion</h1>
-      <nav className="w-full flex justify-center items-center gap-4 border-t border-b p-5">
-        {headerLinks.map((link, index) => (
-          <Link href={link.href} key={index} className="text-lg">
-            {link.label}
-          </Link>
-        ))}
-      </nav>
+    <header className="bg-buddy-bg  py-10">
+      <section className="flex justify-between items-center w-full container">
+        <h1 className="text-center text-2xl text-dark-600 font-medium border-b-4 border-dashed border-buddy-blue">
+          Buddy - Your Learning Companion
+        </h1>
+        <nav className="flex gap-3 items-center">
+          {headerLinks.map((link, index) => (
+            <Link
+              href={link.href}
+              key={index}
+              className="text-xl hover:text-buddy-blue text-dark-200"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+      </section>
     </header>
   );
 };

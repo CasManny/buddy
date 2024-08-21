@@ -44,12 +44,6 @@ export const needsWeSupport = [
         content:"Interaction learning tailored for children on the spectrum",
     },
     {
-        link: "/visual-impairment",
-        image: "/woman.png",
-        title: "Visual Impairment",
-        content: "Text to Speech and screen reader compactibility"
-    },
-    {
         link: "/hearing-impairment",
         image: "/impairment.png",
         title: "Hearing impairment",
@@ -82,14 +76,57 @@ export const buddyFeatures = [
     }
 ]
 
-export const test = [
+export const dyslexia = [
     {
-        need: "Dyslexia",
-        questions: [
-            {
-                "one": ""
-            }
-        ]
+        lesson: "A",
+        answer: 'a'
+    },
+    {
+        lesson: "B",
+        answer: 'b'
+    },
+    {
+        lesson: "C",
+        answer: 'c'
+    },
+    {
+        lesson: "D",
+        answer: 'd'
+    },
+    {
+        lesson: "E",
+        answer: 'e'
     }
 ]
 // featuures, special needs testimonials contact
+
+export const hearingImpairment = [
+    {
+        lesson: "Hello",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    {
+        lesson: "A",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    {
+        lesson: "B",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    {
+        lesson: "C",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    {
+        lesson: "D",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    {
+        lesson: "E",
+        videoUrl: "https://www.youtube/QB44Vddoi-w",
+    },
+    
+]
+
+export const dysgraphia = [ "A", "B", "C", "D", "E"
+]

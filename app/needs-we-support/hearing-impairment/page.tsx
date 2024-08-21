@@ -1,8 +1,11 @@
+import HearingImpairmentTest from '@/components/hearing-impairment/HearingImpairmentTest'
 import React from 'react'
 
 const HearingImpairmentPage = () => {
   return (
-    <div>HearingImpairmentPage</div>
+    <div className='container'>
+      <HearingImpairmentTest />
+    </div>
   )
 }
 
