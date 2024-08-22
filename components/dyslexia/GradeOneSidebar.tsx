@@ -29,7 +29,7 @@ const modules = [
 const GradeOneSidebar = () => {
     const pathname = usePathname()
   return (
-    <div className="w-72 flex flex-col gap-5 p-10 h-full border-r">
+    <div className="w-72 flex flex-col gap-5 p-10 h-full border-r sticky top-0">
       {modules.map((module) => (
         <Link
           href={module.link}

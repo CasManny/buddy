@@ -15,7 +15,7 @@ const VideoPlayer = ({
 }) => {
   return (
     <div className="w-full flex mt-5 items-end gap-5">
-      <video width="700" controls autoPlay loop>
+      <video width="700" controls>
         <source src={videoUrl} type="video/mp4" />
       </video>
       {link && (

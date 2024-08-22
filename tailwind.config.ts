@@ -50,7 +50,8 @@ const config = {
         600: "#76828D",
         700: "#ABB8C4",
       },
-      "buddy-green": "#46C36C"
+      "buddy-green": "#46C36C",
+      "buddy-red": "#CE2D4F"
     },
     extend: {
       backgroundImage: {
@@ -74,6 +75,7 @@ const config = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require('tailwind-scrollbar-hide'),
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
