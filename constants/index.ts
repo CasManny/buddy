@@ -128,3 +128,18 @@ export const hearingImpairment = [
 ];
 
 export const dysgraphia = ["A", "B", "C", "D", "E"];
+
+export const testimonials = [
+  {
+    user: "Jessica Pugsley.",
+    content: "“Audiobooks and podcasts enriched my vocabulary and made reading enjoyable. A laptop that reads my work aloud* was a game-changer for writing and proofreading. "
+  },
+  {
+    user: "Jessica Pugsley.",
+    content: "“Audiobooks and podcasts enriched my vocabulary and made reading enjoyable. A laptop that reads my work aloud* was a game-changer for writing and proofreading. "
+  },
+  {
+    user: "Jessica Pugsley.",
+    content: "“Audiobooks and podcasts enriched my vocabulary and made reading enjoyable. A laptop that reads my work aloud* was a game-changer for writing and proofreading. "
+  },
+]

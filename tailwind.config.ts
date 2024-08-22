@@ -50,6 +50,7 @@ const config = {
         600: "#76828D",
         700: "#ABB8C4",
       },
+      "buddy-green": "#46C36C"
     },
     extend: {
       backgroundImage: {
