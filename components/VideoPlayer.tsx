@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { ArrowRight } from "lucide-react";
 
 const VideoPlayer = ({
   videoUrl,
@@ -9,18 +10,18 @@ const VideoPlayer = ({
   module,
 }: {
   videoUrl: string;
-  link: string;
+  link?: string;
   module?: string;
 }) => {
   return (
-    <div className="w-full flex justify-center items-center flex-col">
+    <div className="w-full flex mt-5 items-end gap-5">
       <video width="700" controls autoPlay loop>
         <source src={videoUrl} type="video/mp4" />
       </video>
-      {module && (
+      {link && (
         <Link href={link} className="mt-5">
-          <Button className="bg-buddy-blue text-buddy_text text-xl">
-            {module}
+          <Button className="bg-buddy-blue text-buddy_text text-xl p-8">
+            {module} <ArrowRight className="animate-bounce" />
           </Button>
         </Link>
       )}
