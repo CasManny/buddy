@@ -14,7 +14,7 @@ const HearingImpairmentPage = () => {
           </h1>
           <div className="w-full flex justify-center items-center flex-col">
             <video width="700" controls autoPlay loop>
-              <source src="/Dyslexia/dyslexiavideo.mp4" type="video/mp4" />
+              <source src="/hearing-impairment.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
