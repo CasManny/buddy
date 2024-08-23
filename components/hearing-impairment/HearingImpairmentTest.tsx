@@ -3,25 +3,26 @@ import { hearingImpairment } from "@/constants";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import HearingImpairmentVideo from "./HearingImpairmenVideo";
+import Image from "next/image";
+
+interface LessonData {
+  lesson: string;
+  videoUrl: string;
+  image: string;
+}
 
 const HearingImpairmentTest = () => {
-  const [data, setData] = useState(hearingImpairment);
-  const [letter, setLetter] = useState("hello");
-  const [selectedData, setSelectedData] = useState([]);
+  const [selectedLesson, setSelectedLesson] = useState<LessonData | null>(null);
 
-  const handleChange = () => {
-    if (letter) {
-      const d = data.find((item) => item.lesson === letter);
-      setSelectedData(d);
-    }
+  const handleButtonClick = ({ lesson }: { lesson: string }) => {
+    const selectedData = hearingImpairment.find(
+      (item) => item.lesson === lesson
+    );
+    setSelectedLesson(selectedData || null);
   };
 
-  useEffect(() => {
-    handleChange()
-  }, [letter]);
-
   return (
-    <div className="flex justify-center items-center flex-col py-16">
+    <div className="container flex justify-center items-center flex-col py-16 scrollbar-hide overflow-auto">
       <h1 className="text-center text-4xl mb-2 tracking-wider">
         Learn Sign Language
       </h1>
@@ -29,13 +30,19 @@ const HearingImpairmentTest = () => {
         Select a letter to see its sign Language representation
       </p>
       <div className="flex gap-5">
-        {data.map((item, index) => (
-          <Button className="bg-buddy-blue text-xl text-buddy_text w-[100px] font-extrabold p-8">
+        {hearingImpairment.map((item) => (
+          <Button
+            key={item.lesson}
+            onClick={() => handleButtonClick({ lesson: item.lesson })}
+            className="bg-buddy-blue text-xl text-buddy_text w-[100px] font-extrabold p-8"
+          >
             {item.lesson}
           </Button>
         ))}
       </div>
-      <HearingImpairmentVideo letter={letter} data={selectedData} />
+      {selectedLesson && (
+        <HearingImpairmentVideo videoUrl={selectedLesson.videoUrl} />
+      )}
     </div>
   );
 };

@@ -2,17 +2,11 @@
 import React from "react";
 import ReactPlayer from "react-player";
 
-const HearingImpairmentVideo = ({
-  letter,
-  data,
-}: {
-  letter: string;
-  data: { lesson: string; videoUrl: string };
-}) => {
+const HearingImpairmentVideo = ({videoUrl}: { videoUrl: string}) => {
   return (
-    <div className="w-[600px] mx-auto mt-5">
+    <div className="w-full flex justify-center items-center flex-col mt-5">
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+        url={videoUrl}
         controls={true}
         width={"100%"}
         height={"70vh"}
