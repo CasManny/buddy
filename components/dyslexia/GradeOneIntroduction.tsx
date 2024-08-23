@@ -6,7 +6,7 @@ import { ArrowRight, Play } from "lucide-react";
 import { handleAudioPlayback } from "./Introduction";
 import VideoPlayer from "../VideoPlayer";
 import { Input } from "../ui/input";
-import Link from "next/link";
+import Speak from "./Speak";
 
 const GradeOneIntroduction = () => {
   const [target] = useState<string>("1");
@@ -62,19 +62,14 @@ const GradeOneIntroduction = () => {
         <div className="mt-5">
           {isCorrect && userInput ? (
             <div className="mt-5 text-xl font-bold">
-              <p className="text-buddy-green text-lg">You are correct!</p>
-              <Link
-                href={"/needs-we-support/dyslexia/mathematics/grade-two"}
-                className="mt-5"
-              >
-                <Button className="bg-buddy-blue text-buddy_text text-xl p-8">
-                  Move to Module Two <ArrowRight className="animate-bounce" />
-                </Button>
-              </Link>
+              <p className="text-buddy-green text-lg mb-5">You are correct!</p>
+              <Speak number="1" word="one" module="Two" link="/needs-we-support/dyslexia/mathematics/grade-two" />
             </div>
           ) : (
             <div className="">
-              <p className="text-buddy-red text-lg">You got is Wrong! Try Again... </p>
+              <p className="text-buddy-red text-lg">
+                You got is Wrong! Try Again...{" "}
+              </p>
             </div>
           )}
         </div>
