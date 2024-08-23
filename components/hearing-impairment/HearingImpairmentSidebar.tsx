@@ -14,7 +14,7 @@ const modules = [
 
   },
   {
-    chapter: "mathematics",
+    chapter: "Mathematics",
     link: "/needs-we-support/hearing-impairment/english-language",
   },
  
