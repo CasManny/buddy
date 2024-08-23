@@ -53,6 +53,7 @@ const config = {
       "buddy-green": "#46C36C",
       "buddy-red": "#CE2D4F",
       "buddy-white": "#F8F7F4",
+      "buddy-yellow": "#FFDA79",
     },
     extend: {
       backgroundImage: {

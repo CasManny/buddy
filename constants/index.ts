@@ -4,15 +4,12 @@ export const headerLinks = [
     label: "Home",
   },
   {
-    href: "/features",
+    href: "#features",
     label: "Features",
   },
+ 
   {
-    href: "/about-us",
-    label: "About us",
-  },
-  {
-    href: "/special-needs",
+    href: "#needs",
     label: "Special Needs",
   },
   {

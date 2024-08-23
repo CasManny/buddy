@@ -4,7 +4,7 @@ import React from "react";
 
 const SpecialFeatures = () => {
   return (
-    <section className="container py-20">
+    <section className="container py-20" id="features">
       <div className="flex flex-col justify-center items-center text-buddy-blue">
         <h1 className="text-4xl font-extrabold mb-2">Buddy's Features</h1>
         <p>
@@ -23,8 +23,8 @@ const SpecialFeatures = () => {
               className="w-20 h-20 mx-auto"
             />
 
-            <h1 className="font-bold my-2 tracking-wider">{item.label}</h1>
-            <p>{item.content}</p>
+            <h1 className="font-bold my-2 tracking-wider text-2xl">{item.label}</h1>
+            <p className="text-xl">{item.content}</p>
           </div>
         ))}
       </div>

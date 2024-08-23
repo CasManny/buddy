@@ -23,7 +23,7 @@ const Hero = () => {
           </Link>
         </div>
         <Image
-          src={"/1000376990 (512×512).png"}
+          src={"/developer.png"}
           alt="buddy"
           width={1000}
           height={1000}
