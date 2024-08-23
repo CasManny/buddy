@@ -5,7 +5,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header className="bg-buddy-bg  py-10">
+    <header className="bg-buddy-white  py-10">
       <section className="flex justify-between items-center w-full container">
         <div className="flex gap-2 items-center">
           <Image
@@ -15,7 +15,7 @@ const Navbar = () => {
             className="w-16 h-16"
             alt="buddy"
           />
-          <h1 className="text-center text-2xl text-dark-600 font-medium border-b-4 border-dashed border-buddy-blue">
+          <h1 className="text-center text-2xl text-dark-300 font-medium">
             Buddy - Your Learning Companion
           </h1>
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link
               href={link.href}
               key={index}
-              className="text-xl hover:text-buddy-blue text-dark-200"
+              className="text-lg hover:text-buddy-blue text-dark-200 font-bold"
             >
               {link.label}
             </Link>

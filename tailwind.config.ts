@@ -51,7 +51,8 @@ const config = {
         700: "#ABB8C4",
       },
       "buddy-green": "#46C36C",
-      "buddy-red": "#CE2D4F"
+      "buddy-red": "#CE2D4F",
+      "buddy-white": "#F8F7F4",
     },
     extend: {
       backgroundImage: {

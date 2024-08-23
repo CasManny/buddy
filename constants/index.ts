@@ -16,10 +16,6 @@ export const headerLinks = [
     label: "Special Needs",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
     href: "#contact",
     label: "Contact",
   },
